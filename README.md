@@ -14,11 +14,11 @@ import seaborn as sns
 
 
 ```python
-fema_claims_xl = pd.ExcelFile("Data\Yearly Paid Claims_FEMA.xlsx")
-fema_funding_xl = pd.ExcelFile("Data\Yearly FEMA funding.xlsx")
+fema_claims_xl = pd.ExcelFile("Data/Yearly Paid Claims_FEMA.xlsx")
+fema_funding_xl = pd.ExcelFile("Data/Yearly FEMA funding.xlsx")
 disasterinci = pd.ExcelFile("Data/FEMA_Disaster incidents.xlsx")
 precip_df = pd.read_csv("Data/heavy_precip.csv")
-temp_data = pd.read_csv("Temperature Anomolies/Resources/Temperature_fig-1.csv")
+temp_data = pd.read_csv("Temperature Anomalies/Resources/Temperature_fig-1.csv")
 disasterdec = pd.ExcelFile("Data/FEMA_Disaster Declarations.xlsx")
 ```
 
@@ -551,8 +551,8 @@ incident_types
     Toxic Substances        9
     Tsunami                 9
     Chemical                9
-    Human Cause             6
     Dam/Levee Break         6
+    Human Cause             6
     Terrorist               5
     Name: Incident Type, dtype: int64
 
@@ -706,10 +706,10 @@ plt.show()
 #Extreme one-day precipitation events from 1910 to 2015.
 
 plt.plot(precip_df["Year"],precip_df["Index value"])
-plt.title("Extreme on-day Precipitation Events from 1910 to 2015")
+plt.title("Extreme one-day Precipitation Events from 1910 to 2015")
 plt.xlabel("Years")
 plt.ylabel("Percent of Land Area")
-plt.savefig("Extreme on-day Precipitation Events from 1910 to 2015")
+plt.savefig("Extreme one-day Precipitation Events from 1910 to 2015")
 plt.show()
 ```
 
